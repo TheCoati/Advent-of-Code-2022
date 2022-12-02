@@ -5,13 +5,14 @@ plugins {
 }
 
 group = "dev.thecoati"
-version = "1.0-SNAPSHOT"
+version = "1.0.0+2022"
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
+    implementation("org.slf4j:slf4j-simple:2.0.5")
     implementation("org.reflections:reflections:0.10.2")
     testImplementation(kotlin("test"))
 }
@@ -21,5 +22,5 @@ tasks.test {
 }
 
 tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "1.8"
+    kotlinOptions.jvmTarget = JavaVersion.VERSION_17.toString()
 }

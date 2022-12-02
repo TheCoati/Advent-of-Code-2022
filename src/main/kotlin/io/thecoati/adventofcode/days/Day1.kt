@@ -3,12 +3,18 @@ package io.thecoati.adventofcode.days
 import io.thecoati.adventofcode.FileInput
 
 class Day1: Day {
+    private val input = FileInput("day1")
+
+    override fun day(): Int {
+        return 1
+    }
+
     override fun title(): String {
-        return "Day 1 - Calorie Counting"
+        return "Calorie Counting"
     }
 
     override fun input(): FileInput {
-        return FileInput("day1")
+        return this.input
     }
 
     override fun part1(input: FileInput): String {
@@ -23,6 +29,10 @@ class Day1: Day {
             .toString()
     }
 
+    /**
+     * Split the file input in parts per empty line.
+     * @return Split lists with lists per entry
+     */
     private fun FileInput.split(): List<List<Int>> {
         return this.joinToString("|")
             .split("||")
