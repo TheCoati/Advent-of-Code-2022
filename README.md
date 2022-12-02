@@ -18,4 +18,5 @@ My submission to the [Advent of Code](https://adventofcode.com/) 2022 in [Kotlin
 
 ## Checklist
 
-- [x] [Day 1](https://adventofcode.com/2022/day/1) **-** Calorie Counting
+- [x] [1 Dec 2022](https://adventofcode.com/2022/day/1) **-** Calorie Counting
+- [x] [2 Dec 2022](https://adventofcode.com/2022/day/2) **-** Rock Paper Scissors

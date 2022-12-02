@@ -2,8 +2,7 @@ package io.thecoati.adventofcode.days
 
 import io.thecoati.adventofcode.FileInput
 
-interface Day
-{
+interface Day {
     /**
      * Get the subject title of the exercise.
      *

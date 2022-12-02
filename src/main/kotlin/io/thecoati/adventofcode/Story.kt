@@ -4,8 +4,7 @@ import io.thecoati.adventofcode.days.Day
 import org.reflections.Reflections
 import java.util.ArrayList
 
-class Story
-{
+class Story {
     private val days: MutableList<Day> = ArrayList()
 
     fun load(from: String?) {
@@ -21,6 +20,9 @@ class Story
     }
 
     fun output() {
+        println("\uD83C\uDF84 Welcome to the Advent of Code 2022")
+        println() /* Break line */
+
         for (day in this.days) {
             println(day.title())
             System.out.printf("Result 1 = %s%n", day.part1(day.input()))
